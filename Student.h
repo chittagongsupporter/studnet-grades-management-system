@@ -14,6 +14,9 @@ public:
 
   // Member functions
 
+  // function to add a grade to the student's record
+  void addGrade(double grade);
+
   // function to calculate average grade
   double getAverage();
 
