@@ -13,7 +13,11 @@ public:
   Student(int studentId) : id(studentId) {}
 
   // Member functions
+
+  // function to calculate average grade
   double getAverage();
+
+  // function to get highest grade
   double getHighestGrade();
 };
 
