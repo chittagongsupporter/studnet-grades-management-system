@@ -12,6 +12,12 @@ double Student::getAverage() {
 
   return sum / grades.size();
 }
+void Student::addGrade(double grade) {
+  if (grade < 0 || grade > 100) {
+    throw std::runtime_error("Grade must be between 0 and 100.");
+  }
+  grades.push_back(grade);
+}
 
 double Student::getHighestGrade() {
   if (grades.size() == 0)
